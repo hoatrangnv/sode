@@ -35,11 +35,9 @@
                 <label class="col-sm-2 form-control-label">Loại bài viết:</label>
                 <div class="col-sm-10">
                   <select class="form-control" id="form-page-type" name="type">
-                    <option value="1">KHUYẾN MÃI CÁ CƯỢC</option>
-                    <option value="2">HƯỚNG DẪN CÁ CƯỢC</option>
-                    <option value="3">KINH NGHIỆM CÁ CƯỢC</option>
-                    <option value="4">GAME BÀI ĐỔI THƯỞNG</option>
-                    <option value="5">TIN TỨC MỖI NGÀY</option>
+                    @foreach(config('config.cate_name') as $key => $name)
+                    <option value="{{$key}}">{{$name}}</option>
+                    @endforeach
                   </select>
                 </div>
               </div>

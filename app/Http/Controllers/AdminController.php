@@ -96,7 +96,7 @@ class AdminController extends Controller
     // type
     $type = $request->input('type');
     if (!$type) {
-      $type = 1;
+      $type = 0;
     }
     // coverFile
     $coverFile = $request->file('cover');
@@ -188,7 +188,7 @@ class AdminController extends Controller
     // type
     $type = $request->input('type');
     if (!$type) {
-      $type = 1;
+      $type = 0;
     }
     // coverFile
     $coverFile = $request->file('cover');

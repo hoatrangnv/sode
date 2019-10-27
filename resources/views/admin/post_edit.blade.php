@@ -35,11 +35,9 @@
                 <label class="col-sm-2 form-control-label">Loại bài viết:</label>
                 <div class="col-sm-10">
                   <select class="form-control" id="form-page-type" name="type">
-                    <option value="1" @if($post->type == 1)selected @endif>KHUYẾN MÃI CÁ CƯỢC</option>
-                    <option value="2" @if($post->type == 2)selected @endif>HƯỚNG DẪN CÁ CƯỢC</option>
-                    <option value="3" @if($post->type == 3)selected @endif>KINH NGHIỆM CÁ CƯỢC</option>
-                    <option value="4" @if($post->type == 4)selected @endif>GAME BÀI ĐỔI THƯỞNG</option>
-                    <option value="5" @if($post->type == 5)selected @endif>TIN TỨC MỖI NGÀY</option>
+                    @foreach(config('config.cate_name') as $key => $name)
+                    <option value="{{$key}}" @if($post->type == $key)selected @endif>{{$name}}</option>
+                    @endforeach
                   </select>
                 </div>
               </div>

@@ -58,5 +58,7 @@ Route::middleware(['runall'])->group(function () {
 	// END Admin ***********
 
 	// FRONDEND ***********
-
+	Route::get('/{cate}', 'MainController@getCate')->name('getCate')->where('cate', config('config.cate')[0].'|'.config('config.cate')[1].'|'.config('config.cate')[2].'|'.config('config.cate')[3].'|'.config('config.cate')[4].'|'.config('config.cate')[5]);
+	Route::get('/{slug}', 'MainController@getPost')->name('getPost');
+	Route::post('/{slug}', 'MainController@getMorePost')->name('getMorePost');
 });

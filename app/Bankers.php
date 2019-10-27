@@ -21,9 +21,12 @@ class Bankers extends Model
   }
 
   public function getListBanker(){
-  	return Bankers::orderBy('rate', 'asc')->orderBy('created_at','desc')->get();
+  	return Bankers::orderBy('rate', 'desc')->orderBy('created_at','desc')->get();
   }
   public function deleteBanker($id){
   	return Bankers::where('id', '=', $id)->delete();
+  }
+  public function top10(){
+    return Bankers::orderBy('rate', 'desc')->orderBy('created_at','desc')->limit(10)->get();
   }
 }

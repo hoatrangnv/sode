@@ -33,12 +33,18 @@ class Posts extends Model
     return Posts::where('type', '=', $type)->orderBy('pos', 'asc')->orderBy('created_at','desc')->get();
   }
   public function getListPostByTypeRelate($type,$slug){
-    return Posts::where('type', '=', $type)->where('slug', '!=', $slug)->orderBy('pos', 'asc')->orderBy('created_at','desc')->get();
+    return Posts::where('type', '=', $type)->where('slug', '!=', $slug)->orderBy('pos', 'asc')->orderBy('created_at','desc')->limit(5)->get();
   }
   public function getListPostLimit($type,$limit){
     return Posts::where('type', '=', $type)->orderBy('pos', 'asc')->orderBy('created_at','desc')->limit($limit)->get();
   }
+  public function getListPostLimitOffset($type,$limit,$offset){
+    return Posts::where('type', '=', $type)->orderBy('pos', 'asc')->orderBy('created_at','desc')->offset($offset)->limit($limit)->get();
+  }
   public function deletePost($id){
   	return Posts::where('id', '=', $id)->delete();
+  }
+  public function countPostByType($type){
+    return Posts::where('type', '=', $type)->count();
   }
 }
