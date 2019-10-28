@@ -331,6 +331,36 @@
                         @endforeach
                     </div>
                 </div>
+                <div class="box-sidebar">
+                    <div class="title-sidebar -3">
+                        <h2 class=""><a class=" text-uppercase"
+                                href="{{route('getCate', ['cate' => config('config.cate')[0]])}}">Quảng cáo 1</a>
+                        </h2>
+                    </div>
+                    <div class="box-top-km  pt-3">
+                        <div style="border: 1px solid #fff; height: 200px"></div>
+                    </div>
+                </div>
+                <div class="box-sidebar">
+                    <div class="title-sidebar -3">
+                        <h2 class=""><a class=" text-uppercase"
+                                href="{{route('getCate', ['cate' => config('config.cate')[0]])}}">Quảng cáo 2</a>
+                        </h2>
+                    </div>
+                    <div class="box-top-km  pt-3">
+                        <div style="border: 1px solid #fff; height: 200px"></div>
+                    </div>
+                </div>
+                <div class="box-sidebar">
+                    <div class="title-sidebar -3">
+                        <h2 class=""><a class=" text-uppercase"
+                                href="{{route('getCate', ['cate' => config('config.cate')[0]])}}">Quảng cáo 3</a>
+                        </h2>
+                    </div>
+                    <div class="box-top-km  pt-3">
+                        <div style="border: 1px solid #fff; height: 100px"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

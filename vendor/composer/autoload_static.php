@@ -77,6 +77,7 @@ class ComposerStaticInit02e04b58dfb0d363b1d726aee0003b65
         ),
         'J' => 
         array (
+            'Just\\Amp\\' => 9,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -214,6 +215,10 @@ class ComposerStaticInit02e04b58dfb0d363b1d726aee0003b65
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Just\\Amp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wearejust/laravel-amp/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -1601,6 +1606,13 @@ class ComposerStaticInit02e04b58dfb0d363b1d726aee0003b65
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Just\\Amp\\Exceptions\\AmpRouteActionMustBeArray' => __DIR__ . '/..' . '/wearejust/laravel-amp/src/Exceptions/AmpRouteActionMustBeArray.php',
+        'Just\\Amp\\Exceptions\\AmpRouteNameMustBeDefined' => __DIR__ . '/..' . '/wearejust/laravel-amp/src/Exceptions/AmpRouteNameMustBeDefined.php',
+        'Just\\Amp\\Laravel\\AmpMatchComposer' => __DIR__ . '/..' . '/wearejust/laravel-amp/src/Laravel/AmpMatchComposer.php',
+        'Just\\Amp\\Laravel\\AmpRouteFacade' => __DIR__ . '/..' . '/wearejust/laravel-amp/src/Laravel/AmpRouteFacade.php',
+        'Just\\Amp\\Laravel\\AmpRouter' => __DIR__ . '/..' . '/wearejust/laravel-amp/src/Laravel/AmpRouter.php',
+        'Just\\Amp\\Laravel\\AmpServiceProvider' => __DIR__ . '/..' . '/wearejust/laravel-amp/src/Laravel/AmpServiceProvider.php',
+        'Just\\Amp\\Laravel\\AmpViewFactory' => __DIR__ . '/..' . '/wearejust/laravel-amp/src/Laravel/AmpViewFactory.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
