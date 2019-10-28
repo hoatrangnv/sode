@@ -8,22 +8,19 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>{{config('config.title')}}</title>
-    <meta name="description"
-        content="{{config('config.description')}}" />
+    <meta name="description" content="{{config('config.description')}}" />
     <link rel="canonical" href="https://nhacaiso.vn/" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{config('config.title')}}" />
-    <meta property="og:description"
-        content="{{config('config.description')}}" />
+    <meta property="og:description" content="{{config('config.description')}}" />
     <meta property="og:url" content="https://nhacaiso.vn/" />
     <meta property="og:site_name" content="Nhà cái số" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description"
-        content="{{config('config.description')}}" />
+    <meta name="twitter:description" content="{{config('config.description')}}" />
     <meta name="twitter:title" content="{{config('config.title')}}" />
     <meta name="twitter:site" content="@nhacaiso" />
 

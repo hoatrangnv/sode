@@ -5,9 +5,6 @@
 
     RewriteEngine On
 
-    RewriteCond %{REQUEST_URI} !^public
-    RewriteRule ^(.*)$ public/$1 [L]
-
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
@@ -20,5 +17,5 @@
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
 </IfModule>
+Options -Indexes
