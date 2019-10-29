@@ -44,7 +44,7 @@ class MainController extends Controller
         $this->data['top10banker'] = $top10banker;
 
         $postsModel = new Posts();
-        $promotion = $postsModel->getListPostLimit(2, 10);
+        $promotion = $postsModel->getListPostLimit(6, 10);
         $this->data['promotion'] = $promotion;
 
         $listpost = $postsModel->getListPostLimitOffset(array_search($cate, config('config.cate')), 10, 0);
@@ -54,6 +54,8 @@ class MainController extends Controller
         $this->data['totalpost'] = $totalpost;
 
         $this->data['cate'] = $cate;
+
+        $this->data['cateName'] = config('config.cate_name')[array_search($cate, config('config.cate'))];
 
         return view('frontend.blog', $this->data);
     }
@@ -86,16 +88,22 @@ class MainController extends Controller
         $this->data['top10banker'] = $top10banker;
 
         $postsModel = new Posts();
-        $promotion = $postsModel->getListPostLimit(2, 10);
+        $promotion = $postsModel->getListPostLimit(6, 10);
         $this->data['promotion'] = $promotion;
 
         $post = $postsModel->getPostBySlug($slug);
         $this->data['post'] = $post;
 
-        $postRelated = $postsModel->getListPostByTypeRelate($post->type, $slug);
-        $this->data['postRelated'] = $postRelated;
+        if($post){
 
-        return view('frontend.single', $this->data);
+            $postRelated = $postsModel->getListPostByTypeRelate($post->type, $slug);
+            $this->data['postRelated'] = $postRelated;
+
+            config(['config.title' => $post->title, 'config.description' => $post->description]);
+            return view('frontend.single', $this->data);
+        }else{
+            return redirect()->route('getHome');
+        }
     }
 
 }

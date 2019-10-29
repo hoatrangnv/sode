@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-md-8 col-12">
                         <div class="title-cat mb-3 text-uppercase">
-                            <h1>Kinh nghiệm cá cược</h1>
+                            <h1>{{$cateName}}</h1>
                         </div>
                         <div class="list-news" id="list-news">
                             @foreach($listpost as $item)
