@@ -7,6 +7,9 @@ use App\Config;
 use App\Posts;
 use Illuminate\Http\Request;
 
+// use Lullabot\AMP\AMP;
+// use Lullabot\AMP\Validate\Scope;
+
 class MainController extends Controller
 {
 
@@ -31,7 +34,19 @@ class MainController extends Controller
         ];
         $this->data['list'] = $list;
 
-        return view('frontend.index', $this->data);
+        if (isset($_GET['amp']) && $_GET['amp'] == 1 ){
+            // $amp = new AMP();
+            // $amp->loadHtml(view('frontend.amp.index', $this->data)->render());
+
+            // $amp_html = $amp->convertToAmpHtml();
+
+            // // Print AMP HTML
+            // print($amp_html);
+            // print($amp->warningsHumanText());
+            return view('frontend.amp.index', $this->data);
+        }else{
+            return view('frontend.index', $this->data);
+        }
     }
 
     /**

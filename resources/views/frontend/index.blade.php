@@ -1,6 +1,7 @@
 @extends('frontend.layout')
 
 @section('content')
+
 <main class="my-md-0 mt-4">
     <div class="container px-0 pl-0">
 
