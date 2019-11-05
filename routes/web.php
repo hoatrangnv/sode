@@ -52,6 +52,8 @@ Route::middleware(['runall'])->group(function () {
 	  	Route::get('/user', 'AdminController@getListUser')->name('adgetListUser');
 	  	Route::get('/user-del/{id}', 'AdminController@getDelUser')->name('adgetDelUser');
 	  	Route::post('/update-password', 'AdminController@postUpdatePassword')->name('adpostUpdatePassword');
+
+	  	Route::post('/upload-img', 'AdminController@uploadImage')->name('uploadImage');
 	  });
 	  
 	});

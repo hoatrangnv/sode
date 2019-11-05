@@ -99,7 +99,11 @@
                                             name="content">@if($post->type != 3){!! $post->content !!}@endif</textarea>
                                     </div>
                                     <script>
-                                    CKEDITOR.replace('form-content-txt');
+                                    CKEDITOR.replace( 'form-content-txt', {
+                                      language: 'en',
+                                      filebrowserUploadUrl: '{!! route('uploadImage', ['_token' => csrf_token() ]) !!}',
+                                      filebrowserUploadMethod: 'form'
+                                    } );
                                     </script>
                                 </div>
                             </div>
@@ -120,5 +124,5 @@
 @endsection
 
 @section('js')
-<script src="/admin/js/post.js" type="text/javascript"></script>
+<script src="{{asset('public/admin/js/post.js')}}" type="text/javascript" ></script>
 @endsection
