@@ -569,7 +569,7 @@ class AdminController extends Controller
           $request->file('upload')->move(public_path('images'), $fileName);
  
           $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-          $url = asset('images/'.$fileName); 
+          $url = asset('/public/images/'.$fileName); 
           $msg = 'Image uploaded successfully'; 
           $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
              

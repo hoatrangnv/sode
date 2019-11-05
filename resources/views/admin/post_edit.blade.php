@@ -61,7 +61,7 @@
                                         </div>
                                     </div>
                                     <img id="file-show" @if($post->cover != "")
-                                    src="{{'public/img/post/' .$post->cover}}" @else class="hidden" @endif >
+                                    src="{{'/public/img/post/' .$post->cover}}" @else class="hidden" @endif >
                                 </div>
                             </div>
                             <div class="line"></div>
