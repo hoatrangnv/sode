@@ -43,5 +43,5 @@
 @endsection
 
 @section('js')
-<script src="/admin/js/home.js" type="text/javascript"></script>
+<script src="{{asset('public/admin/js/home.js')}}" type="text/javascript"></script>
 @endsection

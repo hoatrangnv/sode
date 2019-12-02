@@ -90,13 +90,13 @@
                             </div>
                             <div class="line"></div>
 
-                            <div class="content-post @if($post->type == 3) hidden @endif ">
+                            <div class="content-post">
 
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Nội dung:</label>
                                     <div class="col-sm-10">
                                         <textarea id="form-content-txt" class="text-content form-control"
-                                            name="content">@if($post->type != 3){!! $post->content !!}@endif</textarea>
+                                            name="content">{!! $post->content !!}</textarea>
                                     </div>
                                     <script>
                                     CKEDITOR.replace( 'form-content-txt', {
