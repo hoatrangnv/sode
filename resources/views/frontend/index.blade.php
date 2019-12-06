@@ -1,7 +1,6 @@
 @extends('frontend.layout')
 
 @section('content')
-
 <main class="my-md-0 mt-4">
     <div class="container px-0 pl-0">
 
@@ -20,7 +19,7 @@
                         habitasse platea dictumst.
                     </div>
                     <div class="col-md-6">
-                        <img src="https://via.placeholder.com/560x344" class="img-fluid" />
+                        <img src="/public/img/hinh/hinh3.png" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -333,35 +332,11 @@
                     </div>
                 </div>
                 <div class="box-sidebar">
-                    <div class="title-sidebar -3">
-                        <h2 class=""><a class=" text-uppercase"
-                                href="{{route('getCate', ['cate' => config('config.cate')[0]])}}">Quảng cáo 1</a>
-                        </h2>
-                    </div>
-                    <div class="box-top-km  pt-3">
-                        <div style="border: 1px solid #fff; height: 200px"></div>
-                    </div>
-                </div>
-                <div class="box-sidebar">
-                    <div class="title-sidebar -3">
-                        <h2 class=""><a class=" text-uppercase"
-                                href="{{route('getCate', ['cate' => config('config.cate')[0]])}}">Quảng cáo 2</a>
-                        </h2>
-                    </div>
-                    <div class="box-top-km  pt-3">
-                        <div style="border: 1px solid #fff; height: 200px"></div>
-                    </div>
-                </div>
-                <div class="box-sidebar">
-                    <div class="title-sidebar -3">
-                        <h2 class=""><a class=" text-uppercase"
-                                href="{{route('getCate', ['cate' => config('config.cate')[0]])}}">Quảng cáo 3</a>
-                        </h2>
-                    </div>
-                    <div class="box-top-km  pt-3">
-                        <div style="border: 1px solid #fff; height: 100px"></div>
-                    </div>
-                </div>
+					<img src="/public/img/hinh/hinh1.jpg" class="img-fluid"/>
+				</div>
+				<div class="box-sidebar">
+					<img src="/public/img/hinh/hinh2.jpg" class="img-fluid"/>
+				</div>
             </div>
         </div>
     </div>

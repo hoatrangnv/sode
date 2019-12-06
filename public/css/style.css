@@ -4,7 +4,7 @@ body {
   body p {
     font-size: 15px; }
   body header .navbar {
-    background-color: #fd5900; }
+    background-color: #F8113A; }
     body header .navbar .img-logo {
       width: 200px; }
     body header .navbar .menu-header ul li a {
@@ -20,12 +20,23 @@ body {
       margin-bottom: -5px; }
     body header .navbar .menu-header ul li {
       padding: 5px 3px; }
+	  .box-sidebar {
+    margin-bottom: 20px;
+}
+footer h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+footer a,footer a:hover,footer a:focus {
+  color: #F8113A;
+  text-decoration: none;
+}
   body main {
     position: relative;
     top: 25px; }
     body main .cat-zowin .cat .title-cat h2 {
       font-size: 25px;
-      color: #fd5900;
+      color: #F8113A;
       font-weight: 500;
       font-family: 'Roboto Condensed', sans-serif; }
     body main .cat-zowin .cat .top-news .link thead tr td {
@@ -74,13 +85,13 @@ body {
           text-transform: uppercase;
           background-color: #fff; }
         body main .content .table-content tbody .btn_rate {
-          color: #fd5900;
+          color: #F8113A;
           font-weight: 600;
           padding: 10px 27px;
           text-transform: uppercase;
           background-color: #fff; }
         body main .content .table-content tbody .stt {
-          background-color: #fd5900;
+          background-color: #F8113A;
           padding: 15px 0px;
           margin: 0px;
           color: #fff;
@@ -105,7 +116,7 @@ body {
         padding-left: 10px;
         line-height: 20px; }
         body main .news .title h2 a {
-          color: #fd5900;
+          color: #F8113A;
           text-decoration: none;
           font-family: 'Roboto Condensed', sans-serif; }
     body main .news .content-news {
@@ -118,7 +129,7 @@ body {
           color: #000;
           font-weight: 600; }
           body main .news .content-news .title-news a:hover {
-            color: #fd5900;
+            color: #F8113A;
             text-decoration: none; }
       body main .news .content-news .des {
         color: #676767; }
@@ -126,7 +137,7 @@ body {
       border-bottom: 1px dotted #bbb;
       padding: 5px 0px; }
       body main .news .list-news i {
-        color: #fd5900; }
+        color: #F8113A; }
       body main .news .list-news p {
         margin-bottom: 0 !important; }
         body main .news .list-news p a {
@@ -135,7 +146,7 @@ body {
           color: #000; }
           body main .news .list-news p a:hover {
             text-decoration: none;
-            color: #fd5900; }
+            color: #F8113A; }
     body main .news-footbal .sidebar .title-sidebar {
       border-left: 5px solid #bdbdbd; }
       body main .news-footbal .sidebar .title-sidebar h2 {
@@ -143,7 +154,7 @@ body {
         padding-left: 10px;
         line-height: 20px; }
         body main .news-footbal .sidebar .title-sidebar h2 a {
-          color: #fd5900;
+          color: #F8113A;
           text-decoration: none;
           font-family: 'Roboto Condensed', sans-serif; }
     body main .news-footbal .ft-news h3 {
@@ -154,7 +165,7 @@ body {
       font-family: 'Roboto Condensed', sans-serif; }
     body main .news-footbal .ft-news a:hover {
       text-decoration: none;
-      color: #fd5900 !important; }
+      color: #F8113A !important; }
     body main .news-footbal .ft-news .title {
       border-left: 5px solid #bdbdbd; }
       body main .news-footbal .ft-news .title h2 {
@@ -162,7 +173,7 @@ body {
         padding-left: 10px;
         line-height: 20px; }
         body main .news-footbal .ft-news .title h2 a {
-          color: #fd5900;
+          color: #F8113A;
           text-decoration: none;
           font-family: 'Roboto Condensed', sans-serif; }
     body main .news-footbal .ft-news .lst-news .list-news {
@@ -171,7 +182,7 @@ body {
       body main .news-footbal .ft-news .lst-news .list-news .ttbd {
         margin-left: 0px; }
       body main .news-footbal .ft-news .lst-news .list-news i {
-        color: #fd5900; }
+        color: #F8113A; }
       body main .news-footbal .ft-news .lst-news .list-news p {
         margin-bottom: 0 !important; }
         body main .news-footbal .ft-news .lst-news .list-news p a {
@@ -180,7 +191,7 @@ body {
           color: #000; }
           body main .news-footbal .ft-news .lst-news .list-news p a:hover {
             text-decoration: none;
-            color: #fd5900; }
+            color: #F8113A; }
     body main .single .content {
       max-width: 100%; }
       body main .single .content .date {
@@ -208,13 +219,13 @@ body {
             background-color: red !important;
             color: #fff !important; }
       body main .single .content p img {
-        width: 100%;
+        max-width: 100% !important;
         margin: 0 auto;
         height: auto;
         text-align: center; }
       body main .single .content h1 {
         font-size: 30px;
-        color: #fd5900;
+        color: #F8113A;
         font-family: 'Roboto Condensed', sans-serif; }
       body main .single .content h2 {
         font-size: 25px;
@@ -238,7 +249,7 @@ body {
         font-family: 'Roboto Condensed', sans-serif; }
         body main .single .content .news-diff .box-content .des a:hover {
           text-decoration: none;
-          color: #fd5900; }
+          color: #F8113A; }
       body main .single .content figure {
         width: 100% !important;
         margin: 0 auto;
@@ -274,10 +285,10 @@ body {
           padding: 13px 0px;
           background-color: #f4f4f4; }
           body main .sidebar .box-top .evaluate a {
-            color: #fd5900; }
+            color: #F8113A; }
             body main .sidebar .box-top .evaluate a:hover {
               text-decoration: none;
-              color: #fd5900; }
+              color: #F8113A; }
       body main .sidebar .box-sidebar .title-sidebar {
         font-size: 25px;
         font-family: 'Roboto Condensed', sans-serif; }
@@ -294,7 +305,7 @@ body {
           font-size: 15px; }
           body main .sidebar .box-sidebar .box-top-km a:hover {
             text-decoration: none;
-            color: #fd5900; }
+            color: #F8113A; }
     body main .category .head-title h1 {
       font-size: 30px;
       color: #011a32;
@@ -308,7 +319,7 @@ body {
       background-color: #fff; }
     body main .category .cat .title-cat h1 {
       font-size: 30px;
-      color: #fd5900;
+      color: #F8113A;
       font-family: 'Roboto Condensed', sans-serif; }
     body main .category .cat h3 a {
       color: #000;
@@ -316,13 +327,13 @@ body {
       font-family: 'Roboto Condensed', sans-serif; }
       body main .category .cat h3 a:hover {
         text-decoration: none;
-        color: #fd5900; }
+        color: #F8113A; }
     body main .category .cat .border-bottom {
       border-bottom-color: #bbbbbb !important;
       border-bottom-style: dotted !important; }
     body main .category .km .title-cat h2 {
       font-size: 25px;
-      color: #fd5900;
+      color: #F8113A;
       font-family: 'Roboto Condensed', sans-serif; }
     body main .category .km h3 a {
       color: #000;
@@ -330,7 +341,7 @@ body {
       font-family: 'Roboto Condensed', sans-serif; }
       body main .category .km h3 a:hover {
         text-decoration: none;
-        color: #fd5900; }
+        color: #F8113A; }
     body main .category .km .border-bottom {
       border-bottom-color: #bbbbbb !important;
       border-bottom-style: dotted !important; }
@@ -368,7 +379,7 @@ body {
       font-family: 'Roboto Condensed', sans-serif; }
       body main .link-nha-cai .km h3 a:hover {
         text-decoration: none;
-        color: #fd5900; }
+        color: #F8113A; }
     body main .link-nha-cai .km .border-bottom {
       border-bottom-color: #bbbbbb !important;
       border-bottom-style: dotted !important; }
@@ -450,7 +461,7 @@ body {
           color: #000; }
           body main .news .list-news h3 a:hover {
             text-decoration: none;
-            color: #fd5900; }
+            color: #F8113A; }
     body main .news .col-12 {
       border-top: 1px solid #dee2e6;
       border-bottom: 1px solid #dee2e6;
@@ -474,7 +485,7 @@ body {
           border-bottom: none; }
         body main .sidebar .box-sidebar .title-sidebar h2 {
           font-size: 20px;
-          color: #fd5900;
+          color: #F8113A;
           font-weight: 600;
           border-left: 5px solid;
           text-align: left;
@@ -559,7 +570,7 @@ body {
           color: #000; }
       body main .link-nha-cai .km .title-cat h2 {
         font-size: 20px;
-        color: #fd5900;
+        color: #F8113A;
         border-left: 5px solid;
         padding-left: 5px; }
     body main .link-nha-cai .link-ncs .h1 {
@@ -579,7 +590,7 @@ body {
       height: auto; }
     body main .single .content .news-diff {
       border-bottom: 1px solid #eee;
-      color: #fd5900;
+      color: #F8113A;
       background: #fff;
       margin-left: -15px;
       margin-right: -15px;

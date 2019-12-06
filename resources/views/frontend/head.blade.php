@@ -12,17 +12,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>{{config('config.title')}}</title>
     <meta name="description" content="{{config('config.description')}}" />
-    <link rel="canonical" href="https://nhacaiso.vn/" />
+    <link rel="canonical" href="https://nhacai88.vn/" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{config('config.title')}}" />
     <meta property="og:description" content="{{config('config.description')}}" />
-    <meta property="og:url" content="https://nhacaiso.vn/" />
-    <meta property="og:site_name" content="Nhà cái số" />
+    <meta property="og:url" content="https://nhacai88.vn/" />
+    <meta property="og:site_name" content="Nhà cái 88" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="{{config('config.description')}}" />
     <meta name="twitter:title" content="{{config('config.title')}}" />
-    <meta name="twitter:site" content="@nhacaiso" />
+    <meta name="twitter:site" content="@nhacai88" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i|Roboto:400,700,700i"
         rel="stylesheet">

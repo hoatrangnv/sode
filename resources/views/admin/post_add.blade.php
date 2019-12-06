@@ -89,12 +89,11 @@
                     <textarea id="form-content-txt" class="text-content form-control" name="content"></textarea>
                   </div>
                   <script>
-                    
-                    CKEDITOR.replace( 'form-content-txt', {
-                      language: 'en',
-                      filebrowserUploadUrl: '{!! route('uploadImage', ['_token' => csrf_token() ]) !!}',
-                      filebrowserUploadMethod: 'form'
-                    } );
+	CKEDITOR.replace( 'form-content-txt', {
+                                      language: 'en',
+                                      filebrowserUploadUrl: '{!! route('uploadImage', ['_token' => csrf_token() ]) !!}',
+                                      filebrowserUploadMethod: 'form'
+                                    } );
                 </script>
                 </div>
               </div>

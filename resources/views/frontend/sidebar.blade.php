@@ -43,4 +43,10 @@
             @endforeach
         </div>
     </div>
+	<div class="box-sidebar">
+		<img src="/public/img/hinh/hinh1.jpg" class="img-fluid"/>
+    </div>
+    <div class="box-sidebar">
+        <img src="/public/img/hinh/hinh2.jpg" class="img-fluid"/>
+    </div>
 </div>
