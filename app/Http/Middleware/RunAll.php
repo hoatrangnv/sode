@@ -22,6 +22,10 @@ class RunAll
         $config = $configModel->getConfig();
         config(['config.title' => $config->title, 'config.description' => $config->description]);
 
+        if (isset($_GET['amp']) && $_GET['amp'] == 1 ){
+            config(['config.amp' => 1]);
+        }
+
         return $next($request);
     }
 }

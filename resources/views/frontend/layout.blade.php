@@ -1,3 +1,4 @@
+@if(config('config.amp') == 0)
 <!doctype html>
 <html lang="vi">
 
@@ -10,3 +11,14 @@
 </body>
 
 </html>
+@else
+<!doctype html>
+<html ⚡ lang="vi">
+  @include('frontend.amp.head')
+  <body>
+    @include('frontend.amp.header')
+		@yield('content')
+		@include('frontend.amp.footer')  
+  </body>
+</html>
+@endif

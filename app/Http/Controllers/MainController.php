@@ -34,16 +34,11 @@ class MainController extends Controller
         ];
         $this->data['list'] = $list;
 
-        if (isset($_GET['amp']) && $_GET['amp'] == 1 ){
-            // $amp = new AMP();
-            // $amp->loadHtml(view('frontend.amp.index', $this->data)->render());
-
-            // $amp_html = $amp->convertToAmpHtml();
-
-            // // Print AMP HTML
-            // print($amp_html);
-            // print($amp->warningsHumanText());
-            return view('frontend.amp.index', $this->data);
+        if(config('config.amp') == 1){
+            return preg_replace_callback('/<img[^>]*src="([^"]*)"[^>]*>/', function($found){
+                // $size = getimagesize($found[1]);
+                return '<amp-img src="'.$found[1].'" width="100" height="100" layout="responsive" alt="AMP"></amp-img>';
+            } , view('frontend.index', $this->data));
         }else{
             return view('frontend.index', $this->data);
         }
@@ -71,6 +66,8 @@ class MainController extends Controller
         $this->data['cate'] = $cate;
 
         $this->data['cateName'] = config('config.cate_name')[array_search($cate, config('config.cate'))];
+
+        config(['config.title' => config('config.cate_title')[array_search($cate, config('config.cate'))], 'config.description' => config('config.cate_description')[array_search($cate, config('config.cate'))]]);
 
         return view('frontend.blog', $this->data);
     }
