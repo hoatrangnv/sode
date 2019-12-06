@@ -40,7 +40,7 @@
                         <div class="col-md-6 col-12 col-img pb-3">
                             <div class="row">
                                 <div class="col-md-2 col-2 pr-0 text-center"><img class="img img-fluid img-tik"
-                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/tickV.png" /></div>
+                                        src=" /public/uploads/2019/02/tickV.png" /></div>
                                 <div class="col-md-10 col-10 pl-lg-0">
 
                                     Tính minh bạch của nhà cái
@@ -51,7 +51,7 @@
                         <div class="col-md-6 col-12 col-img pb-3">
                             <div class="row">
                                 <div class="col-md-2 col-2 pr-0 text-center"><img class="img img-fluid img-tik"
-                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/tickV.png" /></div>
+                                        src=" /public/uploads/2019/02/tickV.png" /></div>
                                 <div class="col-md-10 col-10 pl-lg-0">
 
                                     Chất lượng và trải nghiệm người dùng
@@ -62,7 +62,7 @@
                         <div class="col-md-6 col-12 col-img pb-3">
                             <div class="row">
                                 <div class="col-md-2 col-2 pr-0 text-center"><img class="img img-fluid img-tik"
-                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/tickV.png" /></div>
+                                        src=" /public/uploads/2019/02/tickV.png" /></div>
                                 <div class="col-md-10 col-10 pl-lg-0">
 
                                     Các kèo cá cược có đa dạng, chuẩn xác hay không ?
@@ -73,7 +73,7 @@
                         <div class="col-md-6 col-12 col-img pb-3">
                             <div class="row">
                                 <div class="col-md-2 col-2 pr-0 text-center"><img class="img img-fluid img-tik"
-                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/tickV.png" /></div>
+                                        src=" /public/uploads/2019/02/tickV.png" /></div>
                                 <div class="col-md-10 col-10 pl-lg-0">
 
                                     Tính bảo mật thông tin cao, quá trình rút nạp tiền đơn giản
@@ -113,15 +113,15 @@
                                                 <div class="stt">#{{$key + 1}}</div>
                                                 @if ( $key == 0 )
                                                 <div class="position-absolute" style="top: -10px; left: -10px;"><img
-                                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/king-1.png" />
+                                                        src=" /public/uploads/2019/02/king-1.png" />
                                                 </div>
                                                 @elseif ( $key == 1)
                                                 <div class="position-absolute" style="top: -10px; left: -10px;"><img
-                                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/king-2.png">
+                                                        src=" /public/uploads/2019/02/king-2.png">
                                                 </div>
                                                 @elseif ( $key == 2)
                                                 <div class="position-absolute" style="top: -10px; left: -10px;"><img
-                                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/king-3.png">
+                                                        src=" /public/uploads/2019/02/king-3.png">
                                                 </div>
                                                 @endif
                                             </div>
@@ -142,7 +142,7 @@
                             </td>
                             <td class="border-right-0 border-top-0" style="width: 148px;">
                                 <div style="padding-top: 20px;"><img
-                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/star.png" width="75%" />
+                                        src=" /public/uploads/2019/02/star.png" width="75%" />
                                 </div>
                                 <div class="rank" style="color: #6f7072;">Lượt đánh giá</div>
                                 <div class="h5 font-weight-bold" style="color: #6f7072;">{{$item->rate_times}}</div>
@@ -175,15 +175,15 @@
                                                 <div class="stt">#{{$key + 1}}</div>
                                                 @if ( $key == 0 )
                                                 <div class="position-absolute" style="top: -10px; left: -10px;"><img
-                                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/king-1.png" />
+                                                        src=" /public/uploads/2019/02/king-1.png" />
                                                 </div>
                                                 @elseif ( $key == 1)
                                                 <div class="position-absolute" style="top: -10px; left: -10px;"><img
-                                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/king-2.png">
+                                                        src=" /public/uploads/2019/02/king-2.png">
                                                 </div>
                                                 @elseif ( $key == 2)
                                                 <div class="position-absolute" style="top: -10px; left: -10px;"><img
-                                                        src=" https://nhacaiso.vn/wp-content/uploads/2019/02/king-3.png">
+                                                        src=" /public/uploads/2019/02/king-3.png">
                                                 </div>
                                                 @endif
                                             </div>

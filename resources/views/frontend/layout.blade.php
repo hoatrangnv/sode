@@ -13,7 +13,7 @@
 </html>
 @else
 <!doctype html>
-<html ⚡ lang="vi">
+<html ⚡>
   @include('frontend.amp.head')
   <body>
     @include('frontend.amp.header')

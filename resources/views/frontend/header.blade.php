@@ -6,7 +6,7 @@
             <button class="navbar-toggler border-0 pr-0 btn-menu" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img src="https://nhacaiso.vn/wp-content/themes/nhacaiso/assets/img/menu-bar.png"
+                <img src="/public/themes/nhacaiso/assets/img/menu-bar.png"
                     class="img img-fluid w-50 menu-bar">
             </button>
 

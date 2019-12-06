@@ -12,7 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>{{config('config.title')}}</title>
     <meta name="description" content="{{config('config.description')}}" />
-    <link rel="canonical" href="https://nhacai88.vn/" />
+    <link rel="canonical" href="{{url()->current()}}" />
+    <link rel="amphtml" href="{{url()->current()}}?amp=1" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{config('config.title')}}" />

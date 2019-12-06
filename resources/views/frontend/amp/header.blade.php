@@ -2,11 +2,11 @@
     <nav class="navbar navbar-expand-lg p-lg-0 d-block fixed-top">
         <div class="container px-lg-0">
             <a href="/" class="img-logo"><img class="img img-fluid logo w-75"
-                    src="https://nhacaiso.vn/wp-content/themes/nhacaiso/assets/img/logo.png"></a>
+                    src="/public/img/logo.png"></a>
             <button class="navbar-toggler border-0 pr-0 btn-menu" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img src="https://nhacaiso.vn/wp-content/themes/nhacaiso/assets/img/menu-bar.png"
+                <img src="/public/themes/nhacaiso/assets/img/menu-bar.png"
                     class="img img-fluid w-50 menu-bar">
             </button>
 

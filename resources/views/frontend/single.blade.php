@@ -30,12 +30,6 @@
                             <span class="post-views-label">Post Views: </span>
                             <span class="post-views-count">{{number_format($post->view)}}</span>
                         </div>
-                        <div class="d-block d-sm-none my-2">
-                            <a href="https://taimacao.club/?utm_source=nhacaiso.vn&amp;utm_medium=CPC&amp;utm_campaign=content_bottom_728x90"
-                                target="_blank" rel="nofollow"><img
-                                    src="https://nhacaiso.vn/wp-content/themes/nhacaiso/assets/img/taigamemacao.jpg"
-                                    class="img-fluid"></a>
-                        </div>
                         <div class="share d-none d-md-block py-3 border-bottom border-top"
                             style="margin-top: 80px; color: #565656;font-weight: 600;">
                             <!-- Load Facebook SDK for JavaScript -->

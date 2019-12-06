@@ -34,14 +34,7 @@ class MainController extends Controller
         ];
         $this->data['list'] = $list;
 
-        if(config('config.amp') == 1){
-            return preg_replace_callback('/<img[^>]*src="([^"]*)"[^>]*>/', function($found){
-                // $size = getimagesize($found[1]);
-                return '<amp-img src="'.$found[1].'" width="100" height="100" layout="responsive" alt="AMP"></amp-img>';
-            } , view('frontend.index', $this->data));
-        }else{
-            return view('frontend.index', $this->data);
-        }
+        return $this->checkamp('frontend.index');
     }
 
     /**
@@ -69,7 +62,7 @@ class MainController extends Controller
 
         config(['config.title' => config('config.cate_title')[array_search($cate, config('config.cate'))], 'config.description' => config('config.cate_description')[array_search($cate, config('config.cate'))]]);
 
-        return view('frontend.blog', $this->data);
+        return $this->checkamp('frontend.blog');
     }
 
     /**
@@ -112,9 +105,20 @@ class MainController extends Controller
             $this->data['postRelated'] = $postRelated;
 
             config(['config.title' => $post->title, 'config.description' => $post->description]);
-            return view('frontend.single', $this->data);
+            return $this->checkamp('frontend.single');
         }else{
             return redirect()->route('getHome');
+        }
+    }
+
+    public function checkamp($viewfile){
+        if(config('config.amp') == 1){
+            return preg_replace_callback('/<img[^>]*src="([^"]*)"[^>]*>/', function($found){
+                $size = getimagesize(url(trim($found[1])));
+                return '<amp-img src="'.$found[1].'" width="'.$size[0].'" height="'.$size[1].'" layout="responsive" alt="AMP"></amp-img>';
+            } , view($viewfile, $this->data));
+        }else{
+            return view($viewfile, $this->data);
         }
     }
 
